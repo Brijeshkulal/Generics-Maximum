@@ -1,6 +1,17 @@
 package com.generics.max;
 
-public class Maximum {
+public class Maximum <E extends Comparable<E>> {
+	E a, b, c;
+	
+	public Maximum(E a, E b, E c) {
+		this.a = a;
+		this.b = b;
+		this.c = c;
+	}
+	
+	public E findMaximum() {
+        return Maximum.findMaximum(a, b, c);
+    }
 	
 	public static <E extends Comparable<E>> E findMaximum(E a, E b, E c) {
 		E max = a;

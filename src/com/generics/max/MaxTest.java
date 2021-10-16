@@ -2,7 +2,6 @@ package com.generics.max;
 
 import org.junit.Assert;
 import org.junit.Test;
-
 public class MaxTest {
 
 	@Test
