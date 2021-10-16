@@ -6,15 +6,15 @@ import org.junit.Test;
 public class MaxTest {
 
 	@Test
-    public void stringMax_AtFirstPosition() {
-        String actualResult = Maximum.findMaximum("Peach","Apple","Banana");
-        Assert.assertEquals("Peach",actualResult);
+	public void integerMax_AtFirstPosition() {
+        int actualResult = Maximum.findMaximum(8,10,6);
+        Assert.assertEquals(10,actualResult);
     }
 
-    @Test
-    public void stringMax_AtSecondPosition() {
-        String actualResult = Maximum.findMaximum("Apple","Peach","Banana");
-        Assert.assertEquals("Peach",actualResult);
+	@Test
+	public void floatMax_AtSecondPosition() {
+        float actualResult = Maximum.findMaximum(7.42f,8.6f,3.4f);
+        Assert.assertEquals(8.6f,actualResult,0.0);
     }
 
     @Test

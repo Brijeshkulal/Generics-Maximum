@@ -2,8 +2,8 @@ package com.generics.max;
 
 public class Maximum {
 	
-	public static String findMaximum(String a, String b, String c) {
-		String max = a;
+	public static <E extends Comparable<E>> E findMaximum(E a, E b, E c) {
+		E max = a;
 		if(b.compareTo(max) > 0 && b.compareTo(c) > 0) {
 			max = b;
 		}
